@@ -5,7 +5,7 @@ import vector.impl.LinkedVector;
 
 import java.io.*;
 
-import static org.junit.Assert.*;
+
 
 /**
  * Created by Mihun on 12.11.2015.
