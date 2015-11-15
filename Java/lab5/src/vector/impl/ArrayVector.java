@@ -46,6 +46,8 @@ public class ArrayVector implements Vector, Cloneable, Serializable {
     public void fillFromMass(double[] mass) {
         vector = new double[mass.length];
         length = mass.length;
+
+        //todo есть такая штука System.arraycopy()
         for (int i = 0; i < length; i++) {
             vector[i] = mass[i];
         }
@@ -61,9 +63,12 @@ public class ArrayVector implements Vector, Cloneable, Serializable {
 
 
     @Override
-         public boolean equals(Object o) {
+    public boolean equals(Object o) {
+        //todo вы уверены в этой проверке ? и что она проверяет ?
         if (this == o) return true;
+
         if (!(o instanceof Vector)) return false;
+
         Vector vect = (Vector) o;
         if (length != vect.getSize())
             return false;
