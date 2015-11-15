@@ -1,0 +1,70 @@
+Enter username/password@db_alias: old_db/aa11
+Connected.
+SQL> 
+SQL> DROP PROCEDURE add_job_history;
+
+Procedure dropped.
+
+SQL> DROP PROCEDURE secure_dml;
+
+Procedure dropped.
+
+SQL> 
+SQL> DROP VIEW emp_details_view;
+DROP VIEW emp_details_view
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> 
+SQL> DROP SEQUENCE departments_seq;
+
+Sequence dropped.
+
+SQL> DROP SEQUENCE employees_seq;
+
+Sequence dropped.
+
+SQL> DROP SEQUENCE locations_seq;
+
+Sequence dropped.
+
+SQL> 
+SQL> DROP TABLE regions     CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> DROP TABLE departments CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> DROP TABLE locations   CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> DROP TABLE jobs	    CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> DROP TABLE job_history CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> DROP TABLE employees   CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> DROP TABLE countries   CASCADE CONSTRAINTS;
+
+Table dropped.
+
+SQL> 
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> 
+SQL> disconnect
+Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+SQL> exit
